@@ -1,3 +1,43 @@
+## Description
+    - 简易版webpack，根据webpack github 第一次提交改造
+    - 目前实现文件打包功能(多个依赖js打包在一个js内)
+    
+## How to start
+
+```bash
+npm i 
+node ./bin/webpack.js
+```
+## How to test
+ 
+```bash
+npm i serve -g
+serve
+```
+    
+## Usage :
+
+	
+````javascript
+const b = require('./b');
+const c = require('c');
+const {e, f, g} = require('./m');
+
+setTimeout(function () {
+    console.log('webpack init success');
+    console.log(b);
+    console.log(c);
+    console.log(e);
+    console.log(f);
+    console.log(g);
+});
+````    
+
+
+  打包后
+
+	
+````javascript
 /******/(function (modules) {
 /******/    var installedModules = {};
 /******/
@@ -63,3 +103,7 @@ module.exports = {
 
 /***/})
 /***/]);
+
+````
+ 
+
