@@ -11,3 +11,6 @@ setTimeout(function () {
     console.log(g);
 });
 
+function test(){
+    const d = require('d');
+}
