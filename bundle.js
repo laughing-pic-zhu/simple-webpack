@@ -47,6 +47,13 @@ const m = __webpack_require__(3);
 module.exports = b;
 
 /***/}),
+/* 2 */
+/***/(function(module, exports,__webpack_require__) {
+const c = 'c';
+
+module.exports = c;
+
+/***/}),
 /* 3 */
 /***/(function(module, exports,__webpack_require__) {
 // const core = require('./core');
@@ -57,13 +64,6 @@ module.exports = {
     f: 'f',
     g: 'g'
 };
-
-/***/}),
-/* 2 */
-/***/(function(module, exports,__webpack_require__) {
-const c = 'c';
-
-module.exports = c;
 
 /***/}),
 /* 4 */
