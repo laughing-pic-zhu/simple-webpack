@@ -5,8 +5,8 @@ function a() {
         require('./b');
         require('c');
         require('d');
+        require('./a');
     });
 }
-
 
 setTimeout(a, 1000);
