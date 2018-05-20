@@ -57,3 +57,25 @@
 /******/    return __webpack_require__(0)
 /******/})
 /************************************************************************/
+/******/([
+/* 0 */
+/***/(function(module, exports,__webpack_require__) {
+__webpack_require__(1);
+require.ensure(['./a'], function () {
+    require('./b');
+    require('c');
+    require('d');
+});
+
+/***/}),
+/* 1 */
+/***/(function(module, exports,__webpack_require__) {
+const d = 'd';
+
+module.exports = d;
+
+/***/}),
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/***/]);
