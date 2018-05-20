@@ -1,6 +1,6 @@
 ## Description
-    - 简易版webpack，根据webpack github 第一次提交改造
-    - 目前实现文件打包功能(多个依赖js打包在一个js内)
+- 简易版webpack，根据webpack github 第一次提交改造
+- 目前实现文件打包功能(多个依赖js打包在一个js内)
     
 ## How to start
 
