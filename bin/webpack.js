@@ -13,5 +13,18 @@ if (typeof entry === 'string') {
 }
 
 options.entry = entryObj;
-
+options.loaders = [
+    {
+        test: /\.css$/,
+        loader: "css-loader"
+    },
+    {
+        test: /\.json/,
+        loader: "json-loader"
+    },
+    {
+        test: /\.js$/,
+        loader: "test-loader!test-loader2"
+    }
+];
 webpack(options);
