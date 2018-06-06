@@ -19,23 +19,24 @@
 /******/([
 /* 0 */
 /***/(function(module, exports,__webpack_require__) {
-__webpack_require__(2);
 __webpack_require__(1);
+
+exports.test2 = test2;
+
+exports.answer = 42;
 
 /***/}),
 /* 1 */
 /***/(function(module, exports,__webpack_require__) {
-module.exports={
-  "foobar": "test2"
-}
+const c = 'c';
 
-/***/}),
-/* 2 */
-/***/(function(module, exports,__webpack_require__) {
-const d = 'd';
+module.exports = c;
 
-console.log('d');
-module.exports = d;
+exports.test2 = test2;
+
+exports.answer = 42;
+
+exports.d = 2000;
 
 /***/}),
 /***/]);
