@@ -9,6 +9,14 @@ module.exports = function () {
             filename: '[name].bundle.js',
             path: path.resolve(__dirname, 'dist')
         },
+        module: {
+            rules: [
+                {
+                    test: /\.js$/,
+                    loader: "test-loader!test-loader2"
+                }
+            ]
+        },
         plugins: [{
             common: {
                 name: 'common'
