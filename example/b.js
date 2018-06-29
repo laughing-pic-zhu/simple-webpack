@@ -1,3 +1,1 @@
-const b = 'b';
-
-module.exports = b;
+const a = 1;
