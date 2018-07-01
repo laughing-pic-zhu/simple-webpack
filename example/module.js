@@ -11,4 +11,7 @@ compiler.apply(new NodeEnviromentPlugin());
 new WebpackOptionsApply().process({}, compiler);
 compiler.apply(new CommonjsPlugin());
 
-compiler.compile('./a');
+
+compiler.compile(__dirname, './a', 'main', function () {
+    console.log('compile success');
+});
