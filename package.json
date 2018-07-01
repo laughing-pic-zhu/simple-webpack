@@ -1,8 +1,9 @@
 {
   "dependencies": {
     "async": "^2.6.1",
+    "enhanced-resolve": "0.5.x",
     "esprima": "^4.0.0",
-    "tapable": "^0.1.9",
-    "enhanced-resolve": "0.5.x"
+    "mkdirp": "^0.5.1",
+    "tapable": "^0.1.9"
   }
 }

@@ -1,1 +1,2 @@
-require('./e.js');
+require('./e');
+require('d');
