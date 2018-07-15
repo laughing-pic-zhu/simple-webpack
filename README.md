@@ -13,7 +13,7 @@
 
 ```bash
 npm i 
-node ./bin/webpack.js
+node ./bin/webpack.bak.js
 ```
 ## How to test
  

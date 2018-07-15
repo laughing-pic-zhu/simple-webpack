@@ -1,4 +1,3 @@
-// const core = require('./core');
 const a = 1;
 
 module.exports = {

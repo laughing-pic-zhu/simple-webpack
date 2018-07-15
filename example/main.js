@@ -1,1 +1,1 @@
-require('d!c');
+console.log('main')

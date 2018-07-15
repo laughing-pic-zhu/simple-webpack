@@ -1,9 +1,12 @@
 {
+  "name": "simple-webpack",
+  "version": "1.0.0",
   "dependencies": {
     "async": "^2.6.1",
     "enhanced-resolve": "0.5.x",
     "esprima": "^4.0.0",
     "mkdirp": "^0.5.1",
+    "optimist": "^0.6.1",
     "tapable": "^0.1.9"
   }
 }

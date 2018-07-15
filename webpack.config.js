@@ -3,11 +3,12 @@ const path = require('path');
 module.exports = function () {
     return {
         entry: {
-            main: '../example/main.js',
+            main: './example/a.js',
         },
         output: {
             filename: '[name].bundle.js',
-            path: path.resolve(__dirname, 'dist')
+            path: path.resolve(__dirname, 'dist'),
+            publicPath:'/dist/'
         },
         module: {
             rules: [
@@ -17,6 +18,7 @@ module.exports = function () {
                 }
             ]
         },
+        context: __dirname,
         plugins: [{
             common: {
                 name: 'common'
