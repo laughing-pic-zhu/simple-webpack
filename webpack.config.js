@@ -1,4 +1,5 @@
 const path = require('path');
+const HelloPlugin = require('./example/HelloPlugin');
 
 module.exports = function () {
     return {
@@ -8,7 +9,7 @@ module.exports = function () {
         output: {
             filename: '[name].bundle.js',
             path: path.resolve(__dirname, 'dist'),
-            publicPath:'/dist/'
+            publicPath: '/dist/'
         },
         module: {
             rules: [
@@ -18,11 +19,6 @@ module.exports = function () {
                 }
             ]
         },
-        context: __dirname,
-        plugins: [{
-            common: {
-                name: 'common'
-            }
-        }]
+        plugins: [new HelloPlugin()]
     }
 }

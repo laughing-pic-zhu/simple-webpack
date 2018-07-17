@@ -13,7 +13,7 @@ if (typeof entry === 'string') {
 }
 
 options.entry = entryObj;
-
+options.context = options.context || process.cwd();
 const mod = options.module || {};
 options.loaders = mod.rules || [];
 

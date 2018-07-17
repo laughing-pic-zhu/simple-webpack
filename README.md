@@ -1,19 +1,20 @@
 ## Description
 
-简易版webpack
+simple webpack
 
-目前实现功能
+Features
 
 - [x] 文件打包功能(多个依赖js打包在一个js内)
 - [x] 代码分割
 - [x] loader
+- [x] plugins
     
     
 ## How to start
 
 ```bash
 npm i 
-node ./bin/webpack.bak.js
+node ./bin/webpack.js
 ```
 ## How to test
  
