@@ -1,36 +1,25 @@
-webpackJsonp([1], [
+webpackJsonp([3], [
 /* 0 */,
 /* 1 */,
 /* 2 */,
 /* 3 */,
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-console.log('e');
-
-exports.test2 = 'test2';
-
-exports.answer = 42;
-
-/***/ }),
+/* 4 */,
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 console.log('e');
 
-exports.test2 = 'test2';
-
-exports.answer = 42;
-
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
-const a = 1;
-
-exports.test2 = 'test2';
-
-exports.answer = 42;
+console.log('e');
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+const a = 1;
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 const a = 1;
 
@@ -39,10 +28,6 @@ module.exports = {
     f: 'f',
     g: 'g'
 };
-
-exports.test2 = 'test2';
-
-exports.answer = 42;
 
 /***/ })
 /******/ ]);

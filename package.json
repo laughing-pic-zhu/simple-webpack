@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "async": "^2.6.1",
-    "enhanced-resolve": "0.5.x",
+    "enhanced-resolve": "^3.4.0",
     "esprima": "^4.0.0",
     "mkdirp": "^0.5.1",
     "optimist": "^0.6.1",

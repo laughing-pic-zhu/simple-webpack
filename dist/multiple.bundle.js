@@ -136,36 +136,9 @@
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
-__webpack_require__(3);
-__webpack_require__(2);
-__webpack_require__.e(3).then(function () {
-    console.log(1)
-    console.log(1)
-    console.log(1)
-    console.log(1)
-    __webpack_require__(8);
-    __webpack_require__(6);
-});
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-__webpack_require__(4)
-
-console.log('test.js')
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-console.log('d');
-
- console.log("module loader")
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-console.log('test2');
+console.log('multiple')
 
 /***/ })
 /******/ ]);

@@ -4,7 +4,8 @@ const HelloPlugin = require('./example/HelloPlugin');
 module.exports = function () {
     return {
         entry: {
-            main: './example/a.js',
+            main: './example/a',
+            multiple: './example/multiple'
         },
         output: {
             filename: '[name].bundle.js',
@@ -13,10 +14,7 @@ module.exports = function () {
         },
         module: {
             rules: [
-                {
-                    test: /\.js$/,
-                    loader: "test-loader!test-loader2"
-                }
+
             ]
         },
         plugins: [new HelloPlugin()]
