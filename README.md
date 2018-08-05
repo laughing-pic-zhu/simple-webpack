@@ -4,8 +4,8 @@ simple webpack
 
 Features
 
-- [x] 文件打包功能(多个依赖js打包在一个js内)
-- [x] 代码分割
+- [x] bundle build
+- [x] code-splitting
 - [x] loader
 - [x] plugins
     
