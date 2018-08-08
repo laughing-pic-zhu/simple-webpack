@@ -5,7 +5,6 @@ module.exports = function () {
     return {
         entry: {
             main: './example/a',
-            multiple: './example/multiple'
         },
         output: {
             filename: '[name].bundle.js',
