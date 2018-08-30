@@ -1,2 +1,1 @@
-require('./b');
-require('./e');
+console.log('a');

@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('./lib/webpack');
 const HelloPlugin = require('./example/HelloPlugin');
 
 module.exports = function () {
@@ -12,10 +13,14 @@ module.exports = function () {
             publicPath: '/dist/'
         },
         module: {
-            rules: [
-
-            ]
+            rules: []
         },
-        plugins: [new HelloPlugin()]
+        context: __dirname,
+        plugins: [
+            new HelloPlugin(),
+            new webpack.SourceMapDevToolPlugin({
+                filename: '[name].js.map',
+            })
+        ]
     }
 }

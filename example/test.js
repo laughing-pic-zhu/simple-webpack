@@ -1,23 +1,16 @@
-const Parser = require('../lib/Parser');
+const SourceNode = require("source-map").SourceNode;
 
-const a = 'test([111,222])';
+var node = new SourceNode(1, 2, null, [
+    new SourceNode(3, 4, null, "uno"),
+    "dos",
+    [
+        "tres",
+        new SourceNode(5, 6, "a.js", "quatro")
+    ]
+]);
 
-const test = new Parser({});
+// { code: 'unodostresquatro',
+//   map: [object SourceMapGenerator] }
+const t = node.toStringWithSourceMap({file: "my-output-file.js"})
 
-test.plugin('call test', function (expr) {
-    console.log(expr.arguments[0]);
-    console.log(this.evaluateExpression(expr))
-    return true
-});
-
-test.plugin('expression a.b.c', function (expr) {
-    console.log(this.scope);
-    return true
-});
-
-test.plugin('evaluate 111', function (expr) {
-    return true
-});
-
-test.parse(a);
-
+console.log(t.map.toJSON())
