@@ -7,20 +7,21 @@ module.exports = function () {
         entry: {
             main: './example/a',
         },
+        devtool: 'source-map',
         output: {
             filename: '[name].bundle.js',
             path: path.resolve(__dirname, 'dist'),
             publicPath: '/dist/'
         },
         module: {
-            rules: []
+            rules: [{
+                test: /\.js$/,
+                use: 'test-loader'
+            }]
         },
         context: __dirname,
         plugins: [
             new HelloPlugin(),
-            new webpack.SourceMapDevToolPlugin({
-                filename: '[name].js.map',
-            })
         ]
     }
 }
