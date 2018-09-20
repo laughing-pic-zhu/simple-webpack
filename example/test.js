@@ -1,16 +1,13 @@
 const SourceNode = require("source-map").SourceNode;
 
-var node = new SourceNode(1, 2, null, [
-    new SourceNode(3, 4, null, "uno"),
-    "dos",
-    [
-        "tres",
-        new SourceNode(5, 6, "a.js", "quatro")
-    ]
+var node = new SourceNode(null, null, null, [
+    new SourceNode(1, 0, 'webpack:///./example/a.js', "var a = 1;\n"),
+    '\n',
+    new SourceNode(3, 0, 'webpack:///./example/a.js', 'console.log(a);"')
 ]);
 
-// { code: 'unodostresquatro',
-//   map: [object SourceMapGenerator] }
-const t = node.toStringWithSourceMap({file: "my-output-file.js"})
-
-console.log(t.map.toJSON())
+node.setSourceContent('index.js', 'var a = 1;\n\nconsole.log(a);')
+const t = node.toStringWithSourceMap({file: "index.js"})
+const map = t.map.toJSON();
+map.sourceRoot = '/';
+console.log(JSON.stringify(map))
