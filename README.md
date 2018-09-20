@@ -8,6 +8,7 @@ Features
 - [x] code-splitting
 - [x] loader
 - [x] plugins
+- [x] source-map
     
     
 ## How to start
