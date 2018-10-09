@@ -7,7 +7,7 @@ module.exports = function () {
         entry: {
             main: './example/a',
         },
-        devtool: 'eval',
+        watch:true,
         output: {
             filename: '[name].bundle.js',
             path: path.resolve(__dirname, 'dist'),

@@ -9,6 +9,7 @@
     "mkdirp": "^0.5.1",
     "optimist": "^0.6.1",
     "source-map": "^0.7.3",
-    "tapable": "^0.1.9"
+    "tapable": "^0.1.9",
+    "watchpack": "^1.6.0"
   }
 }
