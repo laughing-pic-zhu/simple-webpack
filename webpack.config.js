@@ -7,7 +7,6 @@ module.exports = function () {
         entry: {
             main: './example/a',
         },
-        watch:true,
         output: {
             filename: '[name].bundle.js',
             path: path.resolve(__dirname, 'dist'),
@@ -15,7 +14,7 @@ module.exports = function () {
         },
         context: __dirname,
         plugins: [
-            new HelloPlugin(),
+            new webpack.HotModuleReplacementPlugin(),
         ]
     }
 }

@@ -5,11 +5,12 @@
     "async": "^2.6.1",
     "enhanced-resolve": "^3.4.0",
     "esprima": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
     "jison": "^0.4.18",
     "mkdirp": "^0.5.1",
     "optimist": "^0.6.1",
     "source-map": "^0.7.3",
-    "tapable": "^0.1.9",
+    "tapable": "^0.2.8",
     "watchpack": "^1.6.0"
   }
 }

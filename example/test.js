@@ -1,13 +1,9 @@
-const SourceNode = require("source-map").SourceNode;
+const crypto = require('crypto');
 
-var node = new SourceNode(null, null, null, [
-    new SourceNode(1, 0, 'webpack:///./example/a.js', "var a = 1;\n"),
-    '\n',
-    new SourceNode(3, 0, 'webpack:///./example/a.js', 'console.log(a);"')
-]);
+const hash = crypto.createHash('md5');
 
-node.setSourceContent('index.js', 'var a = 1;\n\nconsole.log(a);')
-const t = node.toStringWithSourceMap({file: "index.js"})
-const map = t.map.toJSON();
-map.sourceRoot = '/';
-console.log(JSON.stringify(map))
+hash.update('Hello');
+hash.update('Hello');
+hash.update('Hello');
+
+console.log(hash.digest('hex'));
