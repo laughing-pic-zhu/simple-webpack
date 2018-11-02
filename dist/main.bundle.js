@@ -14,7 +14,7 @@
 /******/  	        var script = document.createElement("script");
 /******/  	        script.type = "text/javascript";
 /******/  	        script.charset = "utf-8";
-/******/  	        script.src = __webpack_require__.p + "+chunkId+"."+hotCurrentHash+".hot-update.js;
+/******/  	        script.src = __webpack_require__.p + "" + chunkId+ "." + hotCurrentHash + ".hot-update.js";
 /******/  	        head.appendChild(script);
 /******/  	    }
 /******/
@@ -25,7 +25,7 @@
 /******/  	                return reject(new Error("No browser support"));
 /******/  	            try {
 /******/  	                var request = new XMLHttpRequest();
-/******/  	                var requestPath = __webpack_require__.p + "+hotCurrentHash+".hot-update.json;
+/******/  	                var requestPath = __webpack_require__.p + ""+hotCurrentHash+".hot-update.json";
 /******/  	                request.open("GET", requestPath, true);
 /******/  	                request.timeout = requestTimeout;
 /******/  	                request.send(null);
