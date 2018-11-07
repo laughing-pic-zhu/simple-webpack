@@ -1,9 +1,8 @@
-const crypto = require('crypto');
-
-const hash = crypto.createHash('md5');
-
-hash.update('Hello');
-hash.update('Hello');
-hash.update('Hello');
-
-console.log(hash.digest('hex'));
+var argv = require('yargs')
+    .command("morning", "good morning", function (yargs) {
+        console.log("Good Morning");
+    })
+    .command("evening", "good evening", function (yargs) {
+        console.log("Good Evening");
+    })
+    .argv;
