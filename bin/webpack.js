@@ -1,14 +1,26 @@
 const webpack = require('../lib/webpack.js');
 
-var args = require("yargs")
-    .usage("webpack " + require("../package.json").version).argv;
+var yargs = require("yargs")
+    .usage("webpack " + require("../package.json").version);
 
-const options = require('./convert-argv')(args);
+require('./config-yargs')(yargs);
 
-options.context = options.context || process.cwd();
 
-const mod = options.module || {};
+yargs.parse(process.argv.slice(2), (err, argv, output) => {
+    console.log(argv)
+    const options = require('./convert-argv')(argv);
+    const compiler = webpack(options);
 
-options.loaders = mod.rules || [];
+    function compilerCallback() {
+        console.log('compiler finish');
+    }
 
-webpack(options);
+    if (options.watch) {
+        compiler.watch(options.watch, compilerCallback);
+        console.log("\nWebpack is watching the files…\n");
+    } else {
+        compiler.run(compilerCallback);
+    }
+});
+
+
