@@ -1,3 +1,3 @@
-require('./test2')
+require('url')
 
 console.log('test.js')
