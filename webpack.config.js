@@ -5,7 +5,10 @@ const HelloPlugin = require('./example/HelloPlugin');
 module.exports = function () {
     return {
         entry: {
-            main: './example/a',
+            main: [
+                './example/a',
+                './example/e',
+            ]
         },
         devServer: {
             contentBase: './dist',
