@@ -15,6 +15,14 @@ module.exports = function () {
             path: path.resolve(__dirname, 'dist'),
             publicPath: '/dist/'
         },
+        module: {
+            rules: [
+                {
+                    test: /.js$/,
+                    use: '/Users/zhujian/Documents/workspace/webpack/simple-webpack-demo/node_modules/_html-webpack-plugin@3.2.0@html-webpack-plugin/lib/loader.js'
+                }
+            ]
+        },
         context: __dirname,
         plugins: [
             new webpack.HotModuleReplacementPlugin(),
