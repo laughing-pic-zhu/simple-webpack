@@ -1,2 +1,4 @@
-const w=require('webpack-dev-server/client');
+require('./b')
+require.ensure(['./a'], function () {
 
+})
