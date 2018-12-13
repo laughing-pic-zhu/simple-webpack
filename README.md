@@ -9,7 +9,7 @@ Features
 - [x] loader
 - [x] plugins
 - [x] source-map
-    
+- [x] hot-module-replacement
     
 ## How to start
 
